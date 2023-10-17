@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+	function bananacalc() {
+	var bananas = document.getElementById('banana').value;
+	var water = bananas;
+	var lime = (bananas * (6.00/7.00)).toFixed(2);
+	var waterout = document.getElementById('waterout');
+	var limeout = document.getElementById('limeout');
+	waterout.innerHTML=water;
+	limeout.innerHTML=lime;
+
+}
+</script>
+	<title>Banana Juicer</title>
+</head>
+<body>
+<form>
+	<label>Banana Weight:</label><br>
+	<input type="text" name="banana weight" id="banana">
+	<input type = "button" value="Calculate" onclick="bananacalc();"></button>
+	<br>
+	<br>
+	<br>
+	<label>Water Weight:</label>
+	<br>
+	<p id="waterout">.</p>
+	<br>
+	<label>Lime Weight:</label>
+	<p id="limeout">.</p>
+	<br>
+
+</form>
+</body>
+</html>

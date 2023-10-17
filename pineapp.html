@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+	function pineapplecalc() {
+	var pineapple = document.getElementById('pineapple').value;
+	var pineappleshrub = document.getElementById('pineappleshrub').value;
+	pineappleratio = pineapple/1000;
+	var ginger = (pineappleratio*100).toFixed(2);
+	var demsug = (pineappleratio*500).toFixed(2);
+	
+	var gingerout = document.getElementById('gingerout');
+	var demsugout = document.getElementById('demsugout');
+	gingerout.innerHTML=ginger;
+	demsugout.innerHTML=demsug;
+
+}
+</script>
+	<title>Pineapple Shrubber</title>
+</head>
+<body>
+<form>
+	<label>Smoked Pineapple Weight:</label><br>
+	<input type="text" name="pineapple weight" id="pineapple">
+	<input type = "button" value="Calculate" onclick="pineapplecalc();"></button>
+	<br>
+	<br>
+	<br>
+	<label>Ginger Weight:</label>
+	<br>
+	<p id="gingerout">.</p>
+	<br>
+	<label>Demerara Weight:</label>
+	<p id="demsugout">.</p>
+	<br>
+		<label>Pineapple Saccrum Weight:</label><br>
+	<input type="text" name="pineappleshrub weight" id="pineappleshrub">
+	<input type = "button" value="Calculate" onclick="pineapplecalc();"></button>
+
+</form>
+</body>
+</html>
