@@ -10,11 +10,14 @@
 	pineappleratio = pineapple/1000;
 	var ginger = (pineappleratio*100).toFixed(2);
 	var demsug = (pineappleratio*500).toFixed(2);
-	
+	var vineg = (pineappleshrub*0.1).toFixed(2);
+
+	var vinegarout = document.getElementById('vinegarout');
 	var gingerout = document.getElementById('gingerout');
 	var demsugout = document.getElementById('demsugout');
 	gingerout.innerHTML=ginger;
 	demsugout.innerHTML=demsug;
+	vinegarout.innerHTML=vineg;
 
 }
 </script>
@@ -38,6 +41,10 @@
 		<label>Pineapple Saccrum Weight:</label><br>
 	<input type="text" name="pineappleshrub weight" id="pineappleshrub">
 	<input type = "button" value="Calculate" onclick="pineapplecalc();"></button>
+	<br>
+	<label>Vinegar:</label>
+	<br>
+	<p id="vinegarout">.</p>
 
 </form>
 </body>
