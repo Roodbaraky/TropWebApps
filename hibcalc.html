@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+	function hibcalc() {
+	var wantedvol = document.getElementById('wantedvol').value;
+	var hibweight = wantedvol/50;
+	var boilingwat = +wantedvol + +(hibweight*6.25);
+
+	var hibweightout = document.getElementById('hibweightout');
+	var boilingwatout = document.getElementById('boilingwatout');
+	hibweightout.innerHTML=hibweight;
+	boilingwatout.innerHTML=boilingwat;
+}
+</script>
+<title>Hibiscus Tea-er</title>
+</head>
+<body>
+<form>
+<label>Desired Hib Tea Volume:</label>
+<br>
+<input type = "text" name="wanted vol" id="wantedvol">
+<input type = "button" value="Calculate" onclick="hibcalc();">
+</button>
+<br>
+<br>
+<br>
+<label>Tea Weight:</label>
+<br>
+<p id="hibweightout">.</p>
+<br>
+<label>Boiling Water Weight</label>
+<p id="boilingwatout">.</p>
+<br>
+</form>
+</body>
+</html>
