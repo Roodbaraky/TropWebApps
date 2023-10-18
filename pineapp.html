@@ -8,13 +8,16 @@
 	var pineapple = document.getElementById('pineapple').value;
 	var pineappleshrub = document.getElementById('pineappleshrub').value;
 	pineappleratio = pineapple/1000;
+	var allspice = (pineappleratio*10).toFixed(2);
 	var ginger = (pineappleratio*100).toFixed(2);
 	var demsug = (pineappleratio*500).toFixed(2);
 	var vineg = (pineappleshrub*0.1).toFixed(2);
 
+	var allspiceout = document.getElementById('allspiceout');
 	var vinegarout = document.getElementById('vinegarout');
 	var gingerout = document.getElementById('gingerout');
 	var demsugout = document.getElementById('demsugout');
+	allspiceout.innerHTML=allspice;
 	gingerout.innerHTML=ginger;
 	demsugout.innerHTML=demsug;
 	vinegarout.innerHTML=vineg;
@@ -38,11 +41,14 @@
 	<label>Demerara Weight:</label>
 	<p id="demsugout">.</p>
 	<br>
-		<label>Pineapple Saccrum Weight:</label><br>
+	<label>Allspice Berries:</label>
+	<p id="allspiceout">.</p>
+	<br>
+	<label>Pineapple Saccrum Volume:</label><br>
 	<input type="text" name="pineappleshrub weight" id="pineappleshrub">
 	<input type = "button" value="Calculate" onclick="pineapplecalc();"></button>
 	<br>
-	<label>Vinegar:</label>
+	<label>Vinegar Volume:</label>
 	<br>
 	<p id="vinegarout">.</p>
 
